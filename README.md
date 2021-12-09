@@ -9,7 +9,8 @@ This is my repository that holds my code for my Final Project in CS-GY 6006, Inf
 Make sure to click on the **Unreal Engine Plugin version**, and to then follow the Read Me instructions after cloning the aformentioned github. You will want to open the BlackBoxAudioRoom through the Unreal Engine Window that pops up when you complete the VR Works Audio Build. If you downloaded the plugin correctly, you should see options to change VRAudio settings on Static Mesh Actors/Materials (See the screen shot named "VR Works Audio Plugin Success Example")
 3. **Unreal Engine v4.15.1**
 ###If Windows
-1. **Visual Studios (2015 edition)** 
+1. Visual Studios (2015 edition)
+
 ###If Mac:
 1. The Latest Version of Xcode
 
