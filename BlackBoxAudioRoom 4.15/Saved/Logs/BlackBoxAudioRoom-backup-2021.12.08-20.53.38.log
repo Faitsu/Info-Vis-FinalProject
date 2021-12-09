@@ -1,0 +1,2121 @@
+﻿Log file open, 12/08/21 20:43:08
+LogInit:Display: Running engine for game: BlackBoxAudioRoom
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1260860292) SRandInit(1260860292).
+LogInit: Using version manifest at CL 0 with build ID '3c5fb4d8-2571-4905-9aa2-9294a62d95ca'
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.320195
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-0
+LogInit: Engine Version: 4.15.1-0+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-0+++UE4+Release-4.15
+LogInit: Net CL: 0
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Dec  2 2021 04:36:23
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Users/erica/Thesis/UE-Aud-4.15.1/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 0
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2021.12.09-01.43.08:832][  0]LogInit: Selected Device Profile: [Windows]
+[2021.12.09-01.43.08:832][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.12.09-01.43.08:845][  0]LogInit: Computer: DESKTOP-C4KBQ2T
+[2021.12.09-01.43.08:845][  0]LogInit: User: erica
+[2021.12.09-01.43.08:845][  0]LogInit: CPU Page size=65536, Cores=4
+[2021.12.09-01.43.08:845][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.12.09-01.43.08:846][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2021.12.09-01.43.08:846][  0]LogMemory: Platform Memory Stats for Windows
+[2021.12.09-01.43.08:846][  0]LogMemory: Process Physical Memory: 267.16 MB used, 267.17 MB peak
+[2021.12.09-01.43.08:846][  0]LogMemory: Process Virtual Memory: 262.11 MB used, 262.11 MB peak
+[2021.12.09-01.43.08:846][  0]LogMemory: Physical Memory: 16447.76 MB used,  16247.88 MB free, 32695.64 MB total
+[2021.12.09-01.43.08:846][  0]LogMemory: Virtual Memory: 4752.95 MB used,  16247.88 MB free, 134217728.00 MB total
+[2021.12.09-01.43.09:992][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2021.12.09-01.43.10:886][  0]LogD3D11RHI: D3D11 adapters:
+[2021.12.09-01.43.10:997][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 3070' (Feature Level 11_0)
+[2021.12.09-01.43.10:997][  0]LogD3D11RHI:       8043/0/16347 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.12.09-01.43.11:004][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.12.09-01.43.11:004][  0]LogD3D11RHI:       0/0/16347 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.12.09-01.43.11:004][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.12.09-01.43.11:015][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.12.09-01.43.11:015][  0]LogD3D11RHI:     GPU DeviceId: 0x2484 (for the marketing name, search the web for "GPU Device Id")
+[2021.12.09-01.43.11:015][  0]LogWindows: EnumDisplayDevices:
+[2021.12.09-01.43.11:015][  0]LogWindows:    0. 'NVIDIA GeForce RTX 3070' (P:1 D:1)
+[2021.12.09-01.43.11:015][  0]LogWindows:    1. 'NVIDIA GeForce RTX 3070' (P:0 D:0)
+[2021.12.09-01.43.11:016][  0]LogWindows:    2. 'NVIDIA GeForce RTX 3070' (P:0 D:0)
+[2021.12.09-01.43.11:016][  0]LogWindows:    3. 'NVIDIA GeForce RTX 3070' (P:0 D:0)
+[2021.12.09-01.43.11:016][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2021.12.09-01.43.11:016][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 3070
+[2021.12.09-01.43.11:016][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2021.12.09-01.43.11:016][  0]LogD3D11RHI:      Driver Date: Unknown
+[2021.12.09-01.43.11:016][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2021.12.09-01.43.11:099][  0]LogD3D11RHI: Async texture creation enabled
+[2021.12.09-01.43.11:127][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.12.09-01.43.11:131][  0]LogShaderCompilers: Guid format shader working directory is 8 characters bigger than the processId version (../../../../../BlackBoxAudioRoom 4.15/Intermediate/Shaders/WorkingDirectory/54304/).
+[2021.12.09-01.43.11:131][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/erica/AppData/Local/Temp/UnrealShaderWorkingDir/834C4EEB4ED3B25FA7A573A5DE5A6C81/'.
+[2021.12.09-01.43.11:131][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2021.12.09-01.43.12:637][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2021.12.09-01.43.12:723][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2021.12.09-01.43.12:809][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2021.12.09-01.43.12:896][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2021.12.09-01.43.12:977][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2021.12.09-01.43.13:059][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2021.12.09-01.43.13:147][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2021.12.09-01.43.13:234][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2021.12.09-01.43.13:310][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2021.12.09-01.43.13:397][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2021.12.09-01.43.13:483][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2021.12.09-01.43.13:565][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2021.12.09-01.43.13:646][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2021.12.09-01.43.13:736][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2021.12.09-01.43.13:821][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2021.12.09-01.43.13:933][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2021.12.09-01.43.14:024][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2021.12.09-01.43.14:102][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2021.12.09-01.43.14:257][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2021.12.09-01.43.14:309][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2021.12.09-01.43.14:309][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2021.12.09-01.43.15:172][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2021.12.09-01.43.15:318][  0]LogDerivedDataCache: Loaded boot cache 0.14s 50MB ../../../../../BlackBoxAudioRoom 4.15/DerivedDataCache/Boot.ddc.
+[2021.12.09-01.43.15:318][  0]LogDerivedDataCache:Display: Loaded Boot cache: ../../../../../BlackBoxAudioRoom 4.15/DerivedDataCache/Boot.ddc
+[2021.12.09-01.43.15:318][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../BlackBoxAudioRoom 4.15/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.12.09-01.43.15:318][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.12.09-01.43.15:318][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.12.09-01.43.15:318][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2021.12.09-01.43.15:332][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2021.12.09-01.43.15:332][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.12.09-01.43.15:332][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.12.09-01.43.15:348][  0]LogSlate: Using Freetype 2.6.0
+[2021.12.09-01.43.15:361][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.12.09-01.43.15:361][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.12.09-01.43.16:010][  0]LogInit: Selected Device Profile: [Windows]
+[2021.12.09-01.43.16:015][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2021.12.09-01.43.16:315][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.12.09-01.43.16:332][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2021.12.09-01.43.16:332][  0]LogMeshUtilities: No automatic mesh merging module available
+[2021.12.09-01.43.16:332][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2021.12.09-01.43.17:157][  0]LogNetVersion: GetLocalNetworkVersion: CL: 0, ProjectName: blackboxaudioroom, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2902508691
+[2021.12.09-01.43.17:230][  0]LogAssetRegistry: FAssetRegistry took 0.0231 seconds to start up
+[2021.12.09-01.43.17:302][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.033498 seconds
+[2021.12.09-01.43.17:306][  0]LogUObjectArray: 32472 objects as part of root set at end of initial load.
+[2021.12.09-01.43.17:306][  0]LogUObjectAllocator: 7075544 out of 0 bytes used by permanent object pool.
+[2021.12.09-01.43.17:306][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.12.09-01.43.17:427][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2021.12.09-01.43.21:126][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.12.09-01.43.21:206][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.12.09-01.43.21:208][  0]FUdpSocketBuilder: Failed to subscribe UdpMessageMulticastSocket to multicast group 230.0.0.1
+[2021.12.09-01.43.21:208][  0]FUdpSocketBuilder: Failed to create and initialize socket UdpMessageMulticastSocket (last error: 0)
+[2021.12.09-01.43.21:208][  0]LogUdpMessaging:Warning: StartTransport failed to create multicast socket on 0.0.0.0:0, joined to 230.0.0.1:6666 with TTL 1
+[2021.12.09-01.43.21:441][  0]LogNvAudioFn:Display: FNvAcousticRayTracer::FNvAcousticRayTracer
+
+[2021.12.09-01.43.21:441][  0]LogNvAudioFn:Display: FNvAcousticRayTracer::StartupModule
+
+[2021.12.09-01.43.21:599][  0]LogNvXAudio2Fn:Display: FSpatializationPlugin::FSpatializationPlugin
+
+[2021.12.09-01.43.22:306][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2021.12.09-01.43.22:993][  0]SourceControl: Info Source control is disabled
+[2021.12.09-01.43.23:069][  0]SourceControl: Info Source control is disabled
+[2021.12.09-01.43.23:175][  0]SourceControl: Info Source control is disabled
+[2021.12.09-01.43.23:278][  0]SourceControl: Info Source control is disabled
+[2021.12.09-01.43.25:801][  0]LogEngine: Initializing Engine...
+[2021.12.09-01.43.25:805][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.12.09-01.43.26:154][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.12.09-01.43.26:225][  0]LogInit: XAudio2 using 'Headset Earphone (SteelSeries Arctis Pro Chat)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2021.12.09-01.43.26:258][  0]LogNvXAudio2Fn:Display: FSpatializationPlugin::Initialize
+
+[2021.12.09-01.43.26:258][  0]LogNvXAudio2Fn:Display: FSpatializationPlugin::LoadModule
+
+[2021.12.09-01.43.26:272][  0]LogNvXAudio2Fn:Display: NVARContext::NVARContext
+
+[2021.12.09-01.43.26:659][  0]LogNvXAudio2:Display: nvar context created/retrived successfully: 000002019A3780C0
+
+[2021.12.09-01.43.26:659][  0]LogNvXAudio2Fn:Display: FSpatializationPlugin::GetNewSpatializationAlgorithm
+
+[2021.12.09-01.43.26:659][  0]LogNvXAudio2Fn:Display: FHrtfSpatializationAlgorithmXAudio2::FHrtfSpatializationAlgorithmXAudio2
+
+[2021.12.09-01.43.26:659][  0]LogInit: FAudioDevice initialized.
+[2021.12.09-01.43.26:679][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB ../../../../../BlackBoxAudioRoom 4.15/DerivedDataCache/Boot.ddc.
+[2021.12.09-01.43.26:683][  0]LogInit: Texture streaming: Enabled
+[2021.12.09-01.43.26:891][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.12.09-01.43.27:225][  0]LogInit: Transaction tracking system initialized
+[2021.12.09-01.43.27:904][  0]BlueprintLog: New page: Editor Load
+[2021.12.09-01.43.29:733][  0]LocalizationService: Info Localization service is disabled
+[2021.12.09-01.43.31:060][  0]LogConsoleResponse:Display: 
+[2021.12.09-01.43.31:259][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.12.09-01.43.31:260][  0]LogCook:Display: Mobile HDR setting 1
+[2021.12.09-01.43.32:089][  0]LogFileCache: Scanning file cache for directory 'C:/Users/erica/BlackBoxAudioRoom 4.15/Content/' took 0.01s
+[2021.12.09-01.43.33:439][  0]SourceControl: Info Source control is disabled
+[2021.12.09-01.43.33:440][  0]Cmd: MAP LOAD FILE="../../../../../BlackBoxAudioRoom 4.15/Content/CustomContent/tworoomsmultisource.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.12.09-01.43.33:441][  0]LightingResults: New page: Lighting Build
+[2021.12.09-01.43.33:526][  0]LogNvAudioFn:Display: FNvAcousticRayTracer::OnFWorldCleanupEvent
+
+[2021.12.09-01.43.33:527][  0]MapCheck: New page: Map Check
+[2021.12.09-01.43.33:527][  0]LightingResults: New page: Lighting Build
+[2021.12.09-01.43.33:790][  0]LogEnum:Warning: In asset '/Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall', there is an enum property of type 'NvarPredefinedMaterial' with an invalid value of 'NvarPredefinedMaterial::UE4_NVAR_PREDEFINED_MATERIAL_CONCRETE'
+[2021.12.09-01.43.33:951][  0]LogAIModule: Creating AISystem for world tworoomsmultisource
+[2021.12.09-01.43.33:993][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.12.09-01.43.33:995][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.12.09-01.43.34:104][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 109.086ms to complete.
+[2021.12.09-01.43.34:104][  0]LogFileHelpers: Loading map 'tworoomsmultisource' took 0.664
+[2021.12.09-01.43.34:335][  0]LogCollectionManager: Loaded 0 collections in 0.000782 seconds
+[2021.12.09-01.43.34:459][  0]LogFileCache: Scanning file cache for directory 'C:/Users/erica/BlackBoxAudioRoom 4.15/Saved/Collections/' took 0.01s
+[2021.12.09-01.43.34:459][  0]LogFileCache: Scanning file cache for directory 'C:/Users/erica/BlackBoxAudioRoom 4.15/Content/Developers/erica/Collections/' took 0.01s
+[2021.12.09-01.43.34:459][  0]LogFileCache: Scanning file cache for directory 'C:/Users/erica/BlackBoxAudioRoom 4.15/Content/Collections/' took 0.01s
+[2021.12.09-01.43.34:459][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2021.12.09-01.43.34:467][  0]LogContentBrowser: Native class hierarchy populated in 0.0066 seconds. Added 2244 classes and 451 folders.
+[2021.12.09-01.43.34:471][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2021.12.09-01.43.34:472][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2021.12.09-01.43.34:592][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.12.09-01.43.34:721][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.12.09-01.43.34:816][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2021.12.09-01.43.34:909][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2021.12.09-01.43.34:922][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2021.12.09-01.43.35:033][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2021.12.09-01.43.35:033][  0]LogLoad: (Engine Initialization) Total time: 28.74 seconds
+[2021.12.09-01.43.35:033][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.21 seconds
+[2021.12.09-01.43.35:033][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2021.12.09-01.43.35:043][  0]LogOcInput: OculusInput pre-init called
+[2021.12.09-01.43.35:058][  0]LogAssetRegistry: Asset discovery search completed in 17.8509 seconds
+[2021.12.09-01.43.35:058][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2021.12.09-01.43.35:058][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000019 seconds (updated 0 objects)
+[2021.12.09-01.43.35:060][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.12.09-01.43.35:074][  0]LogSlate: Took 0.003990 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.12.09-01.43.35:081][  0]LogSlate: Took 0.003816 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.12.09-01.43.35:091][  0]LogSlate: Took 0.006093 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.12.09-01.43.35:214][  0]LogRenderer: Reallocating scene render targets to support 1068x568 NumSamples 1 (Frame:2).
+[2021.12.09-01.43.38:039][274]LogEditorViewport: Clicking on Actor (LMB): SlidingDoor3_C (SlidingDoor3)
+[2021.12.09-01.43.40:573][540]LogSlate: Took 0.001506 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.12.09-01.43.58:026][529]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_Door_400x402)
+[2021.12.09-01.44.15:177][571]LogTemp: Repeting last play command: Selected Viewport
+[2021.12.09-01.44.15:186][571]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel.tworoomsmultisource' with GeneratedClass '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource_C' with ClassGeneratedBy '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel.tworoomsmultisource'
+[2021.12.09-01.44.15:187][571]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.12.09-01.44.15:190][571]PIE: New page: PIE session: tworoomsmultisource (Dec 8, 2021, 3:44:15 PM)
+[2021.12.09-01.44.15:190][571]LogPlayLevel: Creating play world package: /Game/CustomContent/UEDPIE_0_tworoomsmultisource
+[2021.12.09-01.44.15:208][571]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017794s)
+[2021.12.09-01.44.15:208][571]LogAIModule: Creating AISystem for world tworoomsmultisource
+[2021.12.09-01.44.15:209][571]LogNvAudio:Display: NVAR Version: 1000
+
+[2021.12.09-01.44.15:209][571]LogNvAudio:Display: Creating NVAR. Preset: 0
+
+[2021.12.09-01.44.15:209][571]LogNvAudio:Display: nvarCreate success. nvar handle: 000002019A3780C0
+
+[2021.12.09-01.44.15:209][571]LogNvAudio:Display: ReverbLength: 1.000000
+
+[2021.12.09-01.44.15:209][571]LogNvAudioMeshLoad:Display: PreCreateMaterials(8 count)
+
+[2021.12.09-01.44.15:209][571]LogNvAudio:Display: UnitsPerMeter: 100.000000
+
+[2021.12.09-01.44.15:210][571]LogNvAudio:Display: nvarGetSourceFilterArraySize: 384000
+
+[2021.12.09-01.44.15:210][571]LogPlayLevel: PIE: World Init took: (0.001629s)
+[2021.12.09-01.44.15:210][571]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CustomContent/tworoomsmultisource.tworoomsmultisource to /Game/CustomContent/UEDPIE_0_tworoomsmultisource.tworoomsmultisource (0.020157s)
+[2021.12.09-01.44.15:285][571]LogInit: XAudio2 using 'Headset Earphone (SteelSeries Arctis Pro Chat)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2021.12.09-01.44.15:308][571]LogNvXAudio2Fn:Display: FSpatializationPlugin::Initialize
+
+[2021.12.09-01.44.15:308][571]LogNvXAudio2Fn:Display: FSpatializationPlugin::GetNewSpatializationAlgorithm
+
+[2021.12.09-01.44.15:308][571]LogNvXAudio2Fn:Display: FHrtfSpatializationAlgorithmXAudio2::FHrtfSpatializationAlgorithmXAudio2
+
+[2021.12.09-01.44.15:308][571]LogInit: FAudioDevice initialized.
+[2021.12.09-01.44.15:356][571]LogLoad: Game class is 'GameModeBase'
+[2021.12.09-01.44.15:365][571]LogWorld: Bringing World /Game/CustomContent/UEDPIE_0_tworoomsmultisource.tworoomsmultisource up for play (max tick rate 0) at 2021.12.08-20.44.15
+[2021.12.09-01.44.15:365][571]LogNvAudioFn:Display: FNvAcousticRayTracer::OnPostActorsInitialization
+
+[2021.12.09-01.44.15:365][571]LogNvAudioFn:Display: FNvAcousticRayTracerScene::CommitWorldGeometry (RENDERSTATE)
+
+[2021.12.09-01.44.15:365][571]LogNvAudioMeshLoad:Display: Actor count: 75
+
+[2021.12.09-01.44.15:365][571]LogNvAudioMeshLoad:Display: Actor Wall_400x400_2 Movable 0, components: 1
+
+[2021.12.09-01.44.15:365][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x400_2.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201FD93C100
+
+[2021.12.09-01.44.15:365][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:365][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x401 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x401.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 0000020185BDF580
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_Door_400x400_6 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_Door_400x400_6.StaticMeshComponent0 Wall_Door_400x400 to nvar: 64 verts 44 faces, SImulatePhysics = 0,  staticMeshComponent = 0000020185BDEB00
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x402 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x402.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 0000020185BDE080
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x403 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x403.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 0000020185BDD600
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x404 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x404.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 0000020185BDCB80
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Sphere_12 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: NOT LOADING Mesh Sphere_12 to NVAR
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x405 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x405.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201F4BB7580
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x406 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x406.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201F4BB6B00
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_Door_400x401 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_Door_400x401.StaticMeshComponent0 Wall_Door_400x400 to nvar: 64 verts 44 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201F4BB6080
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x407 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x407.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201F4BB5600
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x408 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x408.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201F4BB4B80
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x409 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x409.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201F4BB4100
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Sphere2 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: NOT LOADING Mesh Sphere2 to NVAR
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Sphere3_2 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: NOT LOADING Mesh Sphere3_2 to NVAR
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Sphere4 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: NOT LOADING Mesh Sphere4 to NVAR
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x410 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x410.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201AFAA4B80
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x411 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x411.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201AFAA4100
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_Door_400x402 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_Door_400x402.StaticMeshComponent0 Wall_Door_400x400 to nvar: 64 verts 44 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201FD937580
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x412 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x412.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201FD936B00
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x413 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x413.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201FD936080
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Wall_400x414 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Wall_400x414.StaticMeshComponent0 Wall_400x400 to nvar: 24 verts 12 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201FD935600
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Warning: Unknown material 9 passed. Using NVAR_PREDEFINED_MATERIAL_CONCRETE
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Sphere5 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: NOT LOADING Mesh Sphere5 to NVAR
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Cube_19 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Cube_19.StaticMeshComponent0 Cube to nvar: 54 verts 48 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201FD938100
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Cube2 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Cube2.StaticMeshComponent0 Cube to nvar: 54 verts 48 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201BFDCB580
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Floor_400x400_2 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: NOT LOADING Mesh Floor_400x400_2 to NVAR
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Sphere6 Movable 0, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: NOT LOADING Mesh Sphere6 to NVAR
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Room1SlidingDoor Movable 1, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Room1SlidingDoor.StaticMeshComponent0 Cube to nvar: 54 verts 48 faces, SImulatePhysics = 0,  staticMeshComponent = 0000020186B4EB00
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor Room2SlidingDoor_6 Movable 1, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh Room2SlidingDoor_6.StaticMeshComponent0 Cube to nvar: 54 verts 48 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201AFA98B80
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Actor SlidingDoor3_2 Movable 1, components: 1
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Loading static mesh SlidingDoor3_2.StaticMeshComponent0 Cube to nvar: 54 verts 48 faces, SImulatePhysics = 0,  staticMeshComponent = 00000201BFDCAB00
+
+[2021.12.09-01.44.15:366][571]LogNvAudioMeshLoad:Display: Material: 0
+
+[2021.12.09-01.44.15:370][571]LogWorld: Bringing up level for play took: 0.006134
+[2021.12.09-01.44.15:454][571]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2021.12.09-01.44.15:459][571]PIE: Info Play in editor start time for /Game/CustomContent/UEDPIE_0_tworoomsmultisource 0.792
+[2021.12.09-01.44.15:460][571]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel.tworoomsmultisource' with GeneratedClass '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource_C' with ClassGeneratedBy '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel.tworoomsmultisource'
+[2021.12.09-01.44.17:287][785]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.17:287][785]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.17:287][785]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.17:860][854]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.17:860][854]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.17:860][854]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.18:301][907]LogNvXAudio2:Display: Destroying nvar source 00000201F765D550
+
+[2021.12.09-01.44.18:393][918]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.18:393][918]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.18:393][918]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.18:868][975]LogNvXAudio2:Display: Destroying nvar source 00000201F7D2C090
+
+[2021.12.09-01.44.19:110][  4]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.19:110][  4]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.19:110][  4]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.19:401][ 39]LogNvXAudio2:Display: Destroying nvar source 00000201F765D940
+
+[2021.12.09-01.44.19:576][ 60]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.19:576][ 60]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.19:576][ 60]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.20:051][117]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.20:051][117]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.20:051][117]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.20:118][125]LogNvXAudio2:Display: Destroying nvar source 00000201F765DB80
+
+[2021.12.09-01.44.20:179][133]LogNvAudio:Display: Audio FPS: 111
+
+[2021.12.09-01.44.20:585][181]LogNvXAudio2:Display: Destroying nvar source 00000201F765DC10
+
+[2021.12.09-01.44.20:677][192]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.20:677][192]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.20:677][192]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.21:060][238]LogNvXAudio2:Display: Destroying nvar source 00000201F765D8B0
+
+[2021.12.09-01.44.21:193][254]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.21:193][254]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.21:193][254]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.21:493][290]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.21:494][290]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.21:494][290]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.21:610][303]LogNvXAudio2:Display: Destroying nvar source 00000201FB21CB10
+
+[2021.12.09-01.44.21:615][303]LogNvXAudio2:Display: Destroying nvar source 00000201F765DC10
+
+[2021.12.09-01.44.21:619][303]LogNvXAudio2:Display: Destroying nvar source 00000201F765DB80
+
+[2021.12.09-01.44.25:180][729]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.44.26:610][900]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.26:610][900]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.26:610][900]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.26:994][946]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.26:994][946]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.26:994][946]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.27:409][994]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.27:412][994]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.27:412][994]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.27:617][ 18]LogNvXAudio2:Display: Destroying nvar source 00000201F7DA2050
+
+[2021.12.09-01.44.28:006][ 64]LogNvXAudio2:Display: Destroying nvar source 00000201F765D820
+
+[2021.12.09-01.44.28:008][ 64]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.28:009][ 64]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.28:009][ 64]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.28:415][113]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1EC80
+
+[2021.12.09-01.44.28:525][126]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.28:526][126]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.28:526][126]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.28:909][172]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.28:909][172]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.28:909][172]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.29:017][185]LogNvXAudio2:Display: Destroying nvar source 00000201F75E2720
+
+[2021.12.09-01.44.29:285][217]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.29:285][217]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.29:285][217]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.29:545][248]LogNvXAudio2:Display: Destroying nvar source 00000201F75B9780
+
+[2021.12.09-01.44.29:919][293]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C2A0
+
+[2021.12.09-01.44.30:183][325]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.44.30:229][330]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.30:230][330]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.30:230][330]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.30:295][338]LogNvXAudio2:Display: Destroying nvar source 00000201F765D820
+
+[2021.12.09-01.44.30:764][394]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.30:766][394]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.30:766][394]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.31:238][451]LogNvXAudio2:Display: Destroying nvar source 00000201F75195B0
+
+[2021.12.09-01.44.31:780][516]LogNvXAudio2:Display: Destroying nvar source 00000201F765D820
+
+[2021.12.09-01.44.31:831][522]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.31:831][522]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.31:831][522]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.32:840][643]LogNvXAudio2:Display: Destroying nvar source 00000201FB21BEB0
+
+[2021.12.09-01.44.33:039][667]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.33:039][667]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.33:039][667]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.33:565][730]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.33:565][730]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.33:565][730]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.34:048][788]LogNvXAudio2:Display: Destroying nvar source 00000201F765D8B0
+
+[2021.12.09-01.44.34:073][791]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.34:073][791]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.34:073][791]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.34:539][847]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.34:540][847]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.34:540][847]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.34:581][852]LogNvXAudio2:Display: Destroying nvar source 00000201F765DB80
+
+[2021.12.09-01.44.34:990][901]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.34:990][901]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.34:990][901]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.35:090][913]LogNvXAudio2:Display: Destroying nvar source 00000201F811DAC0
+
+[2021.12.09-01.44.35:186][925]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.44.35:508][963]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.35:518][963]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.35:518][963]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.35:657][980]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1E800
+
+[2021.12.09-01.44.36:114][ 25]LogNvXAudio2:Display: Destroying nvar source 000002021DFF85B0
+
+[2021.12.09-01.44.36:322][ 43]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.36:323][ 43]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.36:323][ 43]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.36:647][ 82]LogNvXAudio2:Display: Destroying nvar source 00000201F7A43BD0
+
+[2021.12.09-01.44.36:934][116]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.36:934][116]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.36:934][116]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.37:341][165]LogNvXAudio2:Display: Destroying nvar source 00000201F7DA28C0
+
+[2021.12.09-01.44.37:466][180]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.37:466][180]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.37:466][180]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.37:899][232]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.37:900][232]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.37:900][232]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.37:949][238]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C060
+
+[2021.12.09-01.44.38:316][282]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.38:316][282]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.38:316][282]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.38:476][301]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8AC0
+
+[2021.12.09-01.44.38:908][353]LogNvXAudio2:Display: Destroying nvar source 00000201F811D520
+
+[2021.12.09-01.44.38:992][363]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.38:992][363]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.38:992][363]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.39:325][403]LogNvXAudio2:Display: Destroying nvar source 00000201D99317D0
+
+[2021.12.09-01.44.39:675][445]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.39:675][445]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.39:675][445]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.40:000][484]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1D8D0
+
+[2021.12.09-01.44.40:188][507]LogNvAudio:Display: Audio FPS: 116
+
+[2021.12.09-01.44.40:325][523]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.40:325][523]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.40:325][523]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.40:692][567]LogNvXAudio2:Display: Destroying nvar source 000002021DFF89A0
+
+[2021.12.09-01.44.40:818][582]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.40:818][582]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.40:818][582]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.41:135][620]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.41:135][620]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.41:135][620]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.41:335][644]LogNvXAudio2:Display: Destroying nvar source 00000201D99312C0
+
+[2021.12.09-01.44.41:825][702]LogNvXAudio2:Display: Destroying nvar source 000002021DFF86D0
+
+[2021.12.09-01.44.42:151][741]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1F3D0
+
+[2021.12.09-01.44.45:051][ 89]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.45:051][ 89]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.45:051][ 89]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.45:189][106]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.44.45:710][168]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.45:713][168]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.45:713][168]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.46:060][210]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C330
+
+[2021.12.09-01.44.46:730][290]LogNvXAudio2:Display: Destroying nvar source 00000201D9931C50
+
+[2021.12.09-01.44.47:042][326]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.47:043][326]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.47:043][326]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.47:955][435]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.47:959][435]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.47:959][435]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.48:060][447]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C8D0
+
+[2021.12.09-01.44.48:788][534]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.48:791][534]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.48:791][534]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.48:971][556]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C960
+
+[2021.12.09-01.44.49:530][623]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.49:532][623]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.49:532][623]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.49:797][655]LogNvXAudio2:Display: Destroying nvar source 00000201F7DA2DD0
+
+[2021.12.09-01.44.50:192][703]LogNvAudio:Display: Audio FPS: 112
+
+[2021.12.09-01.44.50:297][715]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.50:300][715]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.50:300][715]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.50:538][744]LogNvXAudio2:Display: Destroying nvar source 000002021DFF7F80
+
+[2021.12.09-01.44.51:031][803]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.51:033][803]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.51:033][803]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.51:305][836]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C060
+
+[2021.12.09-01.44.51:798][895]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.51:798][895]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.51:798][895]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.52:039][924]LogNvXAudio2:Display: Destroying nvar source 00000201DA8396B0
+
+[2021.12.09-01.44.52:556][986]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.52:556][986]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.52:556][986]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.52:806][ 16]LogNvXAudio2:Display: Destroying nvar source 00000201D9400100
+
+[2021.12.09-01.44.53:472][ 96]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.53:472][ 96]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.53:472][ 96]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.53:564][107]LogNvXAudio2:Display: Destroying nvar source 000002021DFF7EF0
+
+[2021.12.09-01.44.54:214][185]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.54:214][185]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.54:214][185]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.54:481][217]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8AC0
+
+[2021.12.09-01.44.54:922][270]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.54:922][270]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.54:922][270]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.55:193][303]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.44.55:231][307]LogNvXAudio2:Display: Destroying nvar source 000002021DFF82E0
+
+[2021.12.09-01.44.55:739][368]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.55:739][368]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.55:739][368]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.55:931][391]LogNvXAudio2:Display: Destroying nvar source 000002021DFF7E60
+
+[2021.12.09-01.44.56:349][441]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.56:350][441]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.56:350][441]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.56:749][489]LogNvXAudio2:Display: Destroying nvar source 000002021DFF81C0
+
+[2021.12.09-01.44.56:858][502]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.56:859][502]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.56:859][502]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.57:358][562]LogNvXAudio2:Display: Destroying nvar source 000002021DFF82E0
+
+[2021.12.09-01.44.57:800][615]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.57:800][615]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.57:800][615]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.57:867][623]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1DE70
+
+[2021.12.09-01.44.58:325][678]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.58:325][678]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.58:325][678]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.58:808][736]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1D8D0
+
+[2021.12.09-01.44.58:842][740]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.44.58:842][740]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.44.58:842][740]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.44.59:341][800]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCCD50
+
+[2021.12.09-01.44.59:849][861]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCCB10
+
+[2021.12.09-01.45.00:195][903]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.01:058][  6]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.01:058][  6]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.01:058][  6]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.01:650][ 77]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.01:651][ 77]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.01:651][ 77]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.02:067][127]LogNvXAudio2:Display: Destroying nvar source 000002021DFF82E0
+
+[2021.12.09-01.45.02:658][198]LogNvXAudio2:Display: Destroying nvar source 000002021DFF89A0
+
+[2021.12.09-01.45.02:809][216]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.02:809][216]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.02:809][216]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.03:617][313]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.03:617][313]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.03:617][313]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.03:817][337]LogNvXAudio2:Display: Destroying nvar source 00000201FB21BEB0
+
+[2021.12.09-01.45.04:500][419]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.04:500][419]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.04:500][419]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.04:626][434]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8760
+
+[2021.12.09-01.45.05:100][491]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.05:100][491]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.05:100][491]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.05:197][503]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.05:509][540]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C330
+
+[2021.12.09-01.45.06:043][604]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.06:043][604]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.06:043][604]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.06:109][612]LogNvXAudio2:Display: Destroying nvar source 00000201F7A3F650
+
+[2021.12.09-01.45.06:660][678]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.06:661][678]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.06:661][678]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.07:059][726]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8760
+
+[2021.12.09-01.45.07:119][733]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.07:119][733]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.07:119][733]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.07:593][790]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.07:595][790]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.07:595][790]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.07:669][799]LogNvXAudio2:Display: Destroying nvar source 00000201F7DA2CB0
+
+[2021.12.09-01.45.08:128][854]LogNvXAudio2:Display: Destroying nvar source 000002021DFF7E60
+
+[2021.12.09-01.45.08:238][867]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.08:239][867]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.08:239][867]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.08:605][911]LogNvXAudio2:Display: Destroying nvar source 00000201F7DA2680
+
+[2021.12.09-01.45.08:830][938]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.08:830][938]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.08:830][938]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.09:246][988]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1F580
+
+[2021.12.09-01.45.09:380][  4]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.09:383][  4]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.09:383][  4]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.09:838][ 59]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1F850
+
+[2021.12.09-01.45.10:048][ 84]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.10:048][ 84]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.10:048][ 84]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.10:201][103]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.10:389][125]LogNvXAudio2:Display: Destroying nvar source 000002021E411690
+
+[2021.12.09-01.45.10:931][190]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.10:931][190]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.10:931][190]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.11:056][205]LogNvXAudio2:Display: Destroying nvar source 000002021E411210
+
+[2021.12.09-01.45.11:833][298]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.11:834][298]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.11:834][298]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.11:941][311]LogNvXAudio2:Display: Destroying nvar source 00000201F7DA2680
+
+[2021.12.09-01.45.12:467][374]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.12:467][374]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.12:467][374]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.12:850][420]LogNvXAudio2:Display: Destroying nvar source 00000201D9400190
+
+[2021.12.09-01.45.13:275][471]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.13:275][471]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.13:275][471]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.13:476][495]LogNvXAudio2:Display: Destroying nvar source 00000201D9400460
+
+[2021.12.09-01.45.14:050][564]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.14:050][564]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.14:050][564]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.14:291][593]LogNvXAudio2:Display: Destroying nvar source 000002021DFF7E60
+
+[2021.12.09-01.45.15:058][685]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C0F0
+
+[2021.12.09-01.45.15:125][693]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.15:125][693]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.15:125][693]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.15:208][703]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.15:912][787]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.15:913][787]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.15:913][787]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.16:138][814]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8250
+
+[2021.12.09-01.45.16:629][873]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.16:629][873]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.16:629][873]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.16:921][908]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8760
+
+[2021.12.09-01.45.17:221][944]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.17:221][944]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.17:221][944]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.17:637][994]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1F580
+
+[2021.12.09-01.45.18:229][ 65]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C060
+
+[2021.12.09-01.45.20:208][303]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.22:838][618]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.22:838][618]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.22:838][618]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.23:280][671]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.23:280][671]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.23:280][671]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.23:615][711]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.23:615][711]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.23:615][711]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.23:847][739]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C690
+
+[2021.12.09-01.45.24:140][774]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.24:140][774]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.24:140][774]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.24:290][792]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C2A0
+
+[2021.12.09-01.45.24:549][823]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.24:549][823]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.24:549][823]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.24:631][833]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8640
+
+[2021.12.09-01.45.24:990][876]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.24:990][876]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.24:990][876]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.25:149][895]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1D720
+
+[2021.12.09-01.45.25:211][903]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.25:557][944]LogNvXAudio2:Display: Destroying nvar source 000002021DFF82E0
+
+[2021.12.09-01.45.25:559][944]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.25:559][944]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.25:559][944]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.25:998][997]LogNvXAudio2:Display: Destroying nvar source 00000201FB21BEB0
+
+[2021.12.09-01.45.26:190][ 20]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.26:190][ 20]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.26:190][ 20]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.26:565][ 65]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8130
+
+[2021.12.09-01.45.26:640][ 74]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.26:640][ 74]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.26:640][ 74]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.27:049][123]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.27:049][123]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.27:049][123]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.27:199][141]LogNvXAudio2:Display: Destroying nvar source 00000201D9931350
+
+[2021.12.09-01.45.27:649][195]LogNvXAudio2:Display: Destroying nvar source 000002021DFF85B0
+
+[2021.12.09-01.45.28:041][242]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.28:041][242]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.28:041][242]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.28:058][244]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8AC0
+
+[2021.12.09-01.45.28:666][317]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.28:666][317]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.28:666][317]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.29:049][363]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C690
+
+[2021.12.09-01.45.29:066][365]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.29:066][365]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.29:066][365]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.29:325][396]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.29:325][396]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.29:325][396]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.29:667][437]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.29:667][437]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.29:667][437]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.29:694][440]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C720
+
+[2021.12.09-01.45.29:970][473]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.29:972][473]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.29:972][473]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.30:077][486]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCC600
+
+[2021.12.09-01.45.30:204][501]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.30:204][501]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.30:204][501]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.30:216][503]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.30:337][517]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCC2A0
+
+[2021.12.09-01.45.30:679][558]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCCA80
+
+[2021.12.09-01.45.30:721][563]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.30:721][563]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.30:721][563]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.30:979][594]LogNvXAudio2:Display: Destroying nvar source 000002021E9AC120
+
+[2021.12.09-01.45.31:221][623]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8640
+
+[2021.12.09-01.45.31:240][625]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.31:240][625]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.31:240][625]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.31:649][674]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.31:650][674]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.31:650][674]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.31:732][684]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCBEB0
+
+[2021.12.09-01.45.31:983][714]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.31:983][714]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.31:983][714]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.32:250][746]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C690
+
+[2021.12.09-01.45.32:260][747]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.32:262][747]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.32:262][747]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.32:476][773]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.32:476][773]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.32:476][773]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.32:659][795]LogNvXAudio2:Display: Destroying nvar source 000002021DFF89A0
+
+[2021.12.09-01.45.32:735][804]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.32:735][804]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.32:735][804]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.32:968][832]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.32:970][832]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.32:970][832]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.33:002][836]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8910
+
+[2021.12.09-01.45.33:204][860]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.33:205][860]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.33:205][860]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.33:270][868]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8B50
+
+[2021.12.09-01.45.33:407][884]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.33:407][884]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.33:407][884]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.33:490][894]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8490
+
+[2021.12.09-01.45.33:749][925]LogNvXAudio2:Display: Destroying nvar source 00000201D8412070
+
+[2021.12.09-01.45.33:976][952]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCC8D0
+
+[2021.12.09-01.45.34:061][962]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.34:061][962]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.34:061][962]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.34:219][981]LogNvXAudio2:Display: Destroying nvar source 00000201F7D1D600
+
+[2021.12.09-01.45.34:420][  5]LogNvXAudio2:Display: Destroying nvar source 00000201F7D20390
+
+[2021.12.09-01.45.34:478][ 12]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.34:478][ 12]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.34:478][ 12]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.35:028][ 78]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.35:028][ 78]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.35:028][ 78]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.35:070][ 83]LogNvXAudio2:Display: Destroying nvar source 000002021DFF82E0
+
+[2021.12.09-01.45.35:217][101]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.45.35:437][127]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.35:437][127]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.35:437][127]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.35:487][133]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C690
+
+[2021.12.09-01.45.35:671][155]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.35:671][155]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.35:671][155]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.36:037][199]LogNvXAudio2:Display: Destroying nvar source 000002021DFF81C0
+
+[2021.12.09-01.45.36:255][225]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.36:255][225]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.36:255][225]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.36:446][248]LogNvXAudio2:Display: Destroying nvar source 00000201E09AC9C0
+
+[2021.12.09-01.45.36:679][276]LogNvXAudio2:Display: Destroying nvar source 000002021DFF85B0
+
+[2021.12.09-01.45.36:688][277]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.36:690][277]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.36:690][277]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.37:271][347]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8640
+
+[2021.12.09-01.45.37:321][353]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.37:322][353]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.37:322][353]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.37:671][395]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.37:671][395]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.37:671][395]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.37:696][398]LogNvXAudio2:Display: Destroying nvar source 00000201F7A436C0
+
+[2021.12.09-01.45.37:921][425]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.37:922][425]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.37:922][425]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.38:180][456]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.38:180][456]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.38:180][456]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.38:329][474]LogNvXAudio2:Display: Destroying nvar source 00000201F7DA2DD0
+
+[2021.12.09-01.45.38:680][516]LogNvXAudio2:Display: Destroying nvar source 00000201F7DC4B50
+
+[2021.12.09-01.45.38:930][546]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8400
+
+[2021.12.09-01.45.39:055][561]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.39:055][561]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.39:055][561]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.39:189][577]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8490
+
+[2021.12.09-01.45.39:480][612]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.39:480][612]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.39:481][612]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.39:897][662]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.39:897][662]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.39:897][662]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.40:072][683]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C0F0
+
+[2021.12.09-01.45.40:218][701]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.40:273][707]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.40:273][707]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.40:273][707]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.40:488][733]LogNvXAudio2:Display: Destroying nvar source 000002021DFF87F0
+
+[2021.12.09-01.45.40:856][777]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.40:856][777]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.40:856][777]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.40:906][783]LogNvXAudio2:Display: Destroying nvar source 00000201F7DA3720
+
+[2021.12.09-01.45.41:206][819]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.41:206][819]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.41:206][819]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.41:280][828]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8A30
+
+[2021.12.09-01.45.41:455][849]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.41:455][849]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.41:455][849]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.41:698][878]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.41:698][878]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.41:698][878]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.41:872][899]LogNvXAudio2:Display: Destroying nvar source 000002021DFF82E0
+
+[2021.12.09-01.45.41:923][905]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.41:924][905]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.41:924][905]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.42:140][931]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.42:140][931]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.42:140][931]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.42:227][941]LogNvXAudio2:Display: Destroying nvar source 000002021DFF81C0
+
+[2021.12.09-01.45.42:473][970]LogNvXAudio2:Display: Destroying nvar source 00000201F7A3F650
+
+[2021.12.09-01.45.42:706][998]LogNvXAudio2:Display: Destroying nvar source 00000201D99318F0
+
+[2021.12.09-01.45.42:938][ 26]LogNvXAudio2:Display: Destroying nvar source 00000202206E6F20
+
+[2021.12.09-01.45.43:057][ 40]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.43:057][ 40]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.43:057][ 40]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.43:148][ 51]LogNvXAudio2:Display: Destroying nvar source 00000202206E6C50
+
+[2021.12.09-01.45.43:732][121]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.43:732][121]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.43:732][121]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.44:065][161]LogNvXAudio2:Display: Destroying nvar source 00000202206E7040
+
+[2021.12.09-01.45.44:740][242]LogNvXAudio2:Display: Destroying nvar source 00000202206E68F0
+
+[2021.12.09-01.45.45:218][300]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.45.47:950][627]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.47:950][627]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.47:950][627]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.48:508][694]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.48:508][694]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.48:508][694]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.48:958][748]LogNvXAudio2:Display: Destroying nvar source 00000201D8412850
+
+[2021.12.09-01.45.49:516][815]LogNvXAudio2:Display: Destroying nvar source 00000201D84126A0
+
+[2021.12.09-01.45.50:183][895]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.50:183][895]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.50:183][895]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.50:220][900]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.45.50:600][945]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.50:600][945]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.50:600][945]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.50:925][984]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.50:926][984]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.50:926][984]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.51:201][ 17]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8130
+
+[2021.12.09-01.45.51:203][ 17]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.51:204][ 17]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.51:204][ 17]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.51:610][ 66]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8D00
+
+[2021.12.09-01.45.51:935][105]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8640
+
+[2021.12.09-01.45.52:085][123]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.52:085][123]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.52:085][123]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.52:218][139]LogNvXAudio2:Display: Destroying nvar source 00000201F765D8B0
+
+[2021.12.09-01.45.52:393][160]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.52:393][160]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.52:393][160]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.52:710][198]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.52:710][198]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.52:710][198]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.53:086][243]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.53:087][243]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.53:087][243]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.53:111][246]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCBFD0
+
+[2021.12.09-01.45.53:385][279]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.53:385][279]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.53:385][279]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.53:410][282]LogNvXAudio2:Display: Destroying nvar source 00000201F7FCC600
+
+[2021.12.09-01.45.53:719][319]LogNvXAudio2:Display: Destroying nvar source 000002021DFF87F0
+
+[2021.12.09-01.45.53:945][346]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.53:945][346]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.53:945][346]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.54:095][364]LogNvXAudio2:Display: Destroying nvar source 00000201D9931620
+
+[2021.12.09-01.45.54:278][386]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.54:278][386]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.54:278][386]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.54:405][401]LogNvXAudio2:Display: Destroying nvar source 00000201D99312C0
+
+[2021.12.09-01.45.54:511][414]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.54:511][414]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.54:511][414]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.54:804][449]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.54:804][449]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.54:804][449]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.54:961][468]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8AC0
+
+[2021.12.09-01.45.55:053][479]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.55:053][479]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.55:053][479]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.55:224][500]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.45.55:287][507]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8B50
+
+[2021.12.09-01.45.55:304][509]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.55:304][509]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.55:304][509]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.55:520][535]LogNvXAudio2:Display: Destroying nvar source 00000201F765D940
+
+[2021.12.09-01.45.55:587][543]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.55:588][543]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.55:588][543]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.55:819][571]LogNvXAudio2:Display: Destroying nvar source 00000201F765DB80
+
+[2021.12.09-01.45.55:904][581]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.55:904][581]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.55:904][581]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.56:070][601]LogNvXAudio2:Display: Destroying nvar source 00000201D9931E00
+
+[2021.12.09-01.45.56:187][615]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.56:188][615]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.56:188][615]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.56:321][629]LogNvXAudio2:Display: Destroying nvar source 00000201FB21CA80
+
+[2021.12.09-01.45.56:599][662]LogNvXAudio2:Display: Destroying nvar source 00000201FB21CB10
+
+[2021.12.09-01.45.56:682][672]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.56:682][672]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.56:682][672]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.56:916][700]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8250
+
+[2021.12.09-01.45.57:098][722]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.57:098][722]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:098][722]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:198][734]LogNvXAudio2:Display: Destroying nvar source 000002021DFF7EF0
+
+[2021.12.09-01.45.57:315][748]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.57:315][748]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:315][748]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:541][775]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.57:541][775]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:541][775]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:690][793]LogNvXAudio2:Display: Destroying nvar source 000002022F1D7400
+
+[2021.12.09-01.45.57:732][798]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.57:732][798]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:732][798]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:975][827]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.57:975][827]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.57:975][827]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.58:108][843]LogNvXAudio2:Display: Destroying nvar source 000002022F1D7880
+
+[2021.12.09-01.45.58:243][859]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.58:243][859]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.58:243][859]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.58:335][870]LogNvXAudio2:Display: Destroying nvar source 000002022F1D6F80
+
+[2021.12.09-01.45.58:535][894]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.45.58:535][894]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.45.58:535][894]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.45.58:552][896]LogNvXAudio2:Display: Destroying nvar source 00000201F765D550
+
+[2021.12.09-01.45.58:753][920]LogNvXAudio2:Display: Destroying nvar source 00000201F7D24050
+
+[2021.12.09-01.45.58:986][948]LogNvXAudio2:Display: Destroying nvar source 00000201F765DB80
+
+[2021.12.09-01.45.59:261][981]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8880
+
+[2021.12.09-01.45.59:545][ 15]LogNvXAudio2:Display: Destroying nvar source 000002023604A640
+
+[2021.12.09-01.46.00:230][ 97]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.46.02:210][334]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.02:210][334]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.02:210][334]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.03:112][442]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.03:112][442]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.03:112][442]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.03:219][455]LogNvXAudio2:Display: Destroying nvar source 000002021DFF87F0
+
+[2021.12.09-01.46.04:036][553]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.04:036][553]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.04:036][553]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.04:120][563]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8B50
+
+[2021.12.09-01.46.05:037][673]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.05:037][673]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.05:037][673]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.05:054][675]LogNvXAudio2:Display: Destroying nvar source 00000201FB21C720
+
+[2021.12.09-01.46.05:232][697]LogNvAudio:Display: Audio FPS: 120
+
+[2021.12.09-01.46.05:295][704]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.05:295][704]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.05:295][704]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.05:505][729]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.05:505][729]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.05:505][729]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.05:729][756]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.05:729][756]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.05:729][756]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.06:046][794]LogNvXAudio2:Display: Destroying nvar source 000002022E8138D0
+
+[2021.12.09-01.46.06:312][826]LogNvXAudio2:Display: Destroying nvar source 000002022E813960
+
+[2021.12.09-01.46.06:520][851]LogNvXAudio2:Display: Destroying nvar source 000002022E8139F0
+
+[2021.12.09-01.46.06:736][877]LogNvXAudio2:Display: Destroying nvar source 000002022E813600
+
+[2021.12.09-01.46.07:012][910]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.07:013][910]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.07:013][910]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.07:230][936]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.07:230][936]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.07:230][936]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.08:025][ 31]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8250
+
+[2021.12.09-01.46.08:237][ 56]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8760
+
+[2021.12.09-01.46.10:234][296]LogNvAudio:Display: Audio FPS: 119
+
+[2021.12.09-01.46.10:831][367]LogNvXAudio2:Display: Creating nvar source. Effect Preset: 1
+
+[2021.12.09-01.46.10:831][367]LogNvXAudio2:Display: nvarSetSourceDirectPathGain(): 5.000000
+
+[2021.12.09-01.46.10:831][367]LogNvXAudio2:Display: nvarSetSourceIndirectPathGain(): 5.000000
+
+[2021.12.09-01.46.11:839][488]LogNvXAudio2:Display: Destroying nvar source 000002021DFF8400
+
+[2021.12.09-01.46.12:197][531]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel.tworoomsmultisource' with GeneratedClass '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource_C' with ClassGeneratedBy '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel.tworoomsmultisource'
+[2021.12.09-01.46.12:204][531]LogNvAudioFn:Display: FNvAcousticRayTracer::OnFWorldCleanupEvent
+
+[2021.12.09-01.46.12:268][531]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel' has LevelScriptBlueprint '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel.tworoomsmultisource' with GeneratedClass '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource_C' with ClassGeneratedBy '/Game/CustomContent/tworoomsmultisource.tworoomsmultisource:PersistentLevel.tworoomsmultisource'
+[2021.12.09-01.46.12:281][531]LogNvXAudio2Fn:Display: FHrtfSpatializationAlgorithmXAudio2::~FHrtfSpatializationAlgorithmXAudio2
+
+[2021.12.09-01.46.12:281][531]LogNvXAudio2Fn:Display: FSpatializationPlugin::Shutdown
+
+[2021.12.09-01.46.33:427][ 27]Cmd: QUIT_EDITOR
+[2021.12.09-01.46.33:457][ 27]LogNvXAudio2Fn:Display: FHrtfSpatializationAlgorithmXAudio2::~FHrtfSpatializationAlgorithmXAudio2
+
+[2021.12.09-01.46.33:457][ 27]LogNvXAudio2Fn:Display: FSpatializationPlugin::Shutdown
+
+[2021.12.09-01.46.33:457][ 27]LogNvXAudio2:Display: Destroying nvar context: 000002019A3780C0
+
+[2021.12.09-01.46.33:469][ 27]LogNvXAudio2Fn:Display: FSpatializationPlugin::ReleaseModule
+
+[2021.12.09-01.46.33:700][ 27]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2021.12.09-01.46.33:728][ 27]LogExit: Preparing to exit.
+[2021.12.09-01.46.33:728][ 27]LogNvAudioFn:Display: FNvAcousticRayTracer::PreExit
+
+[2021.12.09-01.46.34:380][ 27]LogNvAudioFn:Display: FNvAcousticRayTracer::OnFWorldCleanupEvent
+
+[2021.12.09-01.46.34:380][ 27]LogNvAudioFn:Display: FNvAcousticRayTracer::OnFWorldCleanupEvent
+
+[2021.12.09-01.46.34:386][ 27]LogDirectoryWatcher: A directory notification for 'C:/Users/erica/BlackBoxAudioRoom 4.15/Content/' was aborted.
+[2021.12.09-01.46.34:402][ 27]LogNvAudioFn:Display: FNvAcousticRayTracer::OnFWorldCleanupEvent
+
+[2021.12.09-01.46.34:402][ 27]LogExit: Editor shut down
+[2021.12.09-01.46.34:402][ 27]LogExit: Transaction tracking system shut down
+[2021.12.09-01.46.34:476][ 27]LogObj: Freed 0b from 0 cluster array pools.
+[2021.12.09-01.46.34:476][ 27]LogExit: Object subsystem successfully closed.
+[2021.12.09-01.46.34:500][ 27]LogD3D11RHI: Shutdown
+[2021.12.09-01.46.34:500][ 27]LogD3D11RHI: CleanupD3DDevice
+[2021.12.09-01.46.34:551][ 27]LogD3D11RHI: ~FD3D11DynamicRHI
+[2021.12.09-01.46.34:580][ 27]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (488)
+[2021.12.09-01.46.34:580][ 27]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (486)
+[2021.12.09-01.46.34:580][ 27]LogModuleManager: Shutting down and abandoning module CrashTracker (484)
+[2021.12.09-01.46.34:580][ 27]LogModuleManager: Shutting down and abandoning module SceneOutliner (482)
+[2021.12.09-01.46.34:580][ 27]LogModuleManager: Shutting down and abandoning module AddContentDialog (480)
+[2021.12.09-01.46.34:581][ 27]LogDirectoryWatcher: A directory notification for 'C:/Users/erica/Thesis/UE-Aud-4.15.1/FeaturePacks/' was aborted.
+[2021.12.09-01.46.34:582][ 27]LogModuleManager: Shutting down and abandoning module WidgetCarousel (479)
+[2021.12.09-01.46.34:582][ 27]LogModuleManager: Shutting down and abandoning module EditorWidgets (476)
+[2021.12.09-01.46.34:582][ 27]LogModuleManager: Shutting down and abandoning module CollectionManager (474)
+[2021.12.09-01.46.34:582][ 27]LogDirectoryWatcher: A directory notification for 'C:/Users/erica/BlackBoxAudioRoom 4.15/Content/Collections/' was aborted.
+[2021.12.09-01.46.34:582][ 27]LogDirectoryWatcher: A directory notification for 'C:/Users/erica/BlackBoxAudioRoom 4.15/Content/Developers/erica/Collections/' was aborted.
+[2021.12.09-01.46.34:582][ 27]LogDirectoryWatcher: A directory notification for 'C:/Users/erica/BlackBoxAudioRoom 4.15/Saved/Collections/' was aborted.
+[2021.12.09-01.46.34:582][ 27]LogModuleManager: Shutting down and abandoning module StatsViewer (472)
+[2021.12.09-01.46.34:582][ 27]LogModuleManager: Shutting down and abandoning module FoliageEdit (470)
+[2021.12.09-01.46.34:582][ 27]LogModuleManager: Shutting down and abandoning module LandscapeEditor (468)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (466)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module ActorPickerMode (464)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module GeometryMode (462)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module TextureAlignMode (460)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module BspMode (458)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module HardwareSurvey (456)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (454)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module AutomationWorker (452)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (450)
+[2021.12.09-01.46.34:583][ 27]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (448)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module PlacementMode (447)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (444)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (442)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module MfMediaFactory (440)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module MfMediaEditor (438)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (436)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (434)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (432)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module Media (431)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (428)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module CharacterAI (426)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module AudioCapture (424)
+[2021.12.09-01.46.34:584][ 27]LogModuleManager: Shutting down and abandoning module SequenceRecorder (423)
+[2021.12.09-01.46.34:585][ 27]LogModuleManager: Shutting down and abandoning module SmartSnapping (420)
+[2021.12.09-01.46.34:585][ 27]LogModuleManager: Shutting down and abandoning module SessionServices (418)
+[2021.12.09-01.46.34:585][ 27]LogModuleManager: Shutting down and abandoning module ViewportSnapping (416)
+[2021.12.09-01.46.34:585][ 27]LogModuleManager: Shutting down and abandoning module ViewportInteraction (414)
+[2021.12.09-01.46.34:585][ 27]LogModuleManager: Shutting down and abandoning module LogVisualizer (412)
+[2021.12.09-01.46.34:586][ 27]LogModuleManager: Shutting down and abandoning module IntroTutorials (410)
+[2021.12.09-01.46.34:587][ 27]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (409)
+[2021.12.09-01.46.34:588][ 27]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (406)
+[2021.12.09-01.46.34:588][ 27]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (404)
+[2021.12.09-01.46.34:588][ 27]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (402)
+[2021.12.09-01.46.34:588][ 27]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (400)
+[2021.12.09-01.46.34:588][ 27]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (399)
+[2021.12.09-01.46.34:593][ 27]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (396)
+[2021.12.09-01.46.34:593][ 27]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (394)
+[2021.12.09-01.46.34:593][ 27]LogModuleManager: Shutting down and abandoning module InputBindingEditor (392)
+[2021.12.09-01.46.34:593][ 27]LogModuleManager: Shutting down and abandoning module NiagaraEditor (390)
+[2021.12.09-01.46.34:594][ 27]LogModuleManager: Shutting down and abandoning module MergeActors (388)
+[2021.12.09-01.46.34:595][ 27]LogModuleManager: Shutting down and abandoning module SizeMap (386)
+[2021.12.09-01.46.34:595][ 27]LogModuleManager: Shutting down and abandoning module TreeMap (384)
+[2021.12.09-01.46.34:595][ 27]LogModuleManager: Shutting down and abandoning module ReferenceViewer (382)
+[2021.12.09-01.46.34:595][ 27]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (380)
+[2021.12.09-01.46.34:595][ 27]LogModuleManager: Shutting down and abandoning module LocalizationService (379)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module HardwareTargeting (376)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (374)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module UndoHistory (372)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module UserFeedback (370)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module XmlParser (368)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module Blutility (366)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (364)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (363)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (360)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module SettingsEditor (358)
+[2021.12.09-01.46.34:596][ 27]LogModuleManager: Shutting down and abandoning module ProjectLauncher (356)
+[2021.12.09-01.46.34:597][ 27]LogModuleManager: Shutting down and abandoning module SessionFrontend (354)
+[2021.12.09-01.46.34:597][ 27]LogModuleManager: Shutting down and abandoning module ProfilerClient (352)
+[2021.12.09-01.46.34:597][ 27]LogModuleManager: Shutting down and abandoning module DeviceManager (350)
+[2021.12.09-01.46.34:598][ 27]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (349)
+[2021.12.09-01.46.34:653][ 27]LogModuleManager: Shutting down and abandoning module AutomationController (346)
+[2021.12.09-01.46.34:653][ 27]LogModuleManager: Shutting down and abandoning module AutomationWindow (344)
+[2021.12.09-01.46.34:653][ 27]LogModuleManager: Shutting down and abandoning module Layers (342)
+[2021.12.09-01.46.34:654][ 27]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (340)
+[2021.12.09-01.46.34:654][ 27]LogModuleManager: Shutting down and abandoning module DetailCustomizations (338)
+[2021.12.09-01.46.34:655][ 27]LogModuleManager: Shutting down and abandoning module PackagesDialog (336)
+[2021.12.09-01.46.34:655][ 27]LogModuleManager: Shutting down and abandoning module Persona (334)
+[2021.12.09-01.46.34:655][ 27]LogModuleManager: Shutting down and abandoning module AnimGraph (333)
+[2021.12.09-01.46.34:655][ 27]LogModuleManager: Shutting down and abandoning module Kismet (330)
+[2021.12.09-01.46.34:657][ 27]LogModuleManager: Shutting down and abandoning module GraphEditor (328)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module ClassViewer (326)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module Toolbox (324)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module ModuleUI (322)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module MovieSceneTools (320)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module OutputLog (318)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module GammaUI (316)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module Documentation (314)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module Niagara (312)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (310)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module AnalyticsET (308)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module PortalServices (306)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module PortalRpc (304)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module MessagingRpc (302)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module AIModule (300)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module GameplayDebugger (299)
+[2021.12.09-01.46.34:658][ 27]LogModuleManager: Shutting down and abandoning module AITestSuite (297)
+[2021.12.09-01.46.34:659][ 27]LogModuleManager: Shutting down and abandoning module ProfilerService (294)
+[2021.12.09-01.46.34:876][ 27]LogModuleManager: Shutting down and abandoning module TaskGraph (292)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module SteamVRController (290)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module SteamVR (288)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (286)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (284)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module OculusLibrary (282)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module OculusInput (280)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (278)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (276)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module CableComponent (274)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (272)
+[2021.12.09-01.46.34:877][ 27]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (268)
+[2021.12.09-01.46.34:880][ 27]LogModuleManager: Shutting down and abandoning module HTML5Networking (266)
+[2021.12.09-01.46.34:880][ 27]LogModuleManager: Shutting down and abandoning module AlembicImporter (264)
+[2021.12.09-01.46.34:880][ 27]LogModuleManager: Shutting down and abandoning module AlembicLibrary (263)
+[2021.12.09-01.46.34:880][ 27]LogModuleManager: Shutting down and abandoning module GeometryCache (262)
+[2021.12.09-01.46.34:881][ 27]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (261)
+[2021.12.09-01.46.34:881][ 27]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (256)
+[2021.12.09-01.46.34:881][ 27]LogModuleManager: Shutting down and abandoning module SuperSearch (255)
+[2021.12.09-01.46.34:881][ 27]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (252)
+[2021.12.09-01.46.34:881][ 27]LogModuleManager: Shutting down and abandoning module PluginBrowser (250)
+[2021.12.09-01.46.34:882][ 27]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (248)
+[2021.12.09-01.46.34:883][ 27]LogModuleManager: Shutting down and abandoning module EpicSurvey (246)
+[2021.12.09-01.46.34:883][ 27]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (244)
+[2021.12.09-01.46.34:883][ 27]LogModuleManager: Shutting down and abandoning module DesktopPlatform (243)
+[2021.12.09-01.46.34:883][ 27]LogModuleManager: Shutting down and abandoning module UObjectPlugin (240)
+[2021.12.09-01.46.34:883][ 27]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (238)
+[2021.12.09-01.46.34:883][ 27]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (236)
+[2021.12.09-01.46.34:885][ 27]LogModuleManager: Shutting down and abandoning module GitSourceControl (234)
+[2021.12.09-01.46.34:885][ 27]LogModuleManager: Shutting down and abandoning module SourceControl (233)
+[2021.12.09-01.46.34:885][ 27]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (230)
+[2021.12.09-01.46.34:885][ 27]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (228)
+[2021.12.09-01.46.34:885][ 27]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (226)
+[2021.12.09-01.46.34:885][ 27]LogModuleManager: Shutting down and abandoning module Paper2DEditor (224)
+[2021.12.09-01.46.34:886][ 27]LogModuleManager: Shutting down and abandoning module MeshPaint (223)
+[2021.12.09-01.46.34:887][ 27]LogModuleManager: Shutting down and abandoning module LevelEditor (221)
+[2021.12.09-01.46.34:888][ 27]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (220)
+[2021.12.09-01.46.34:889][ 27]LogModuleManager: Shutting down and abandoning module MainFrame (218)
+[2021.12.09-01.46.34:889][ 27]LogModuleManager: Shutting down and abandoning module HotReload (217)
+[2021.12.09-01.46.34:892][ 27]LogModuleManager: Shutting down and abandoning module ContentBrowser (213)
+[2021.12.09-01.46.34:894][ 27]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (210)
+[2021.12.09-01.46.34:894][ 27]LogModuleManager: Shutting down and abandoning module PhysXVehicles (208)
+[2021.12.09-01.46.34:894][ 27]LogModuleManager: Shutting down and abandoning module Spatialization (206)
+[2021.12.09-01.46.34:894][ 27]LogModuleManager: Shutting down and abandoning module AcousticRayTracer (204)
+[2021.12.09-01.46.34:894][ 27]LogNvAudioFn:Display: FNvAcousticRayTracer::ShutdownModule
+
+[2021.12.09-01.46.34:894][ 27]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (202)
+[2021.12.09-01.46.34:894][ 27]LogModuleManager: Shutting down and abandoning module UdpMessaging (200)
+[2021.12.09-01.46.34:995][ 27]LogModuleManager: Shutting down and abandoning module TcpMessaging (198)
+[2021.12.09-01.46.35:239][ 27]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (196)
+[2021.12.09-01.46.35:241][ 27]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (194)
+[2021.12.09-01.46.35:241][ 27]LogModuleManager: Shutting down and abandoning module FacialAnimation (192)
+[2021.12.09-01.46.35:241][ 27]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (190)
+[2021.12.09-01.46.35:241][ 27]LogModuleManager: Shutting down and abandoning module Paper2D (188)
+[2021.12.09-01.46.35:242][ 27]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (186)
+[2021.12.09-01.46.35:242][ 27]LogModuleManager: Shutting down and abandoning module WmfMedia (184)
+[2021.12.09-01.46.35:247][ 27]LogModuleManager: Shutting down and abandoning module MfMedia (182)
+[2021.12.09-01.46.35:247][ 27]LogModuleManager: Shutting down and abandoning module MediaAssets (180)
+[2021.12.09-01.46.35:247][ 27]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (178)
+[2021.12.09-01.46.35:247][ 27]LogModuleManager: Shutting down and abandoning module VREditor (176)
+[2021.12.09-01.46.35:247][ 27]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (174)
+[2021.12.09-01.46.35:247][ 27]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (172)
+[2021.12.09-01.46.35:248][ 27]LogModuleManager: Shutting down and abandoning module FunctionalTesting (170)
+[2021.12.09-01.46.35:248][ 27]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (168)
+[2021.12.09-01.46.35:249][ 27]LogModuleManager: Shutting down and abandoning module UMG (166)
+[2021.12.09-01.46.35:249][ 27]LogModuleManager: Shutting down and abandoning module UMGEditor (165)
+[2021.12.09-01.46.35:250][ 27]LogModuleManager: Shutting down and abandoning module Sequencer (164)
+[2021.12.09-01.46.35:251][ 27]LogModuleManager: Shutting down and abandoning module AssetTools (162)
+[2021.12.09-01.46.35:253][ 27]LogModuleManager: Shutting down and abandoning module MessageLog (161)
+[2021.12.09-01.46.35:253][ 27]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (160)
+[2021.12.09-01.46.35:253][ 27]LogModuleManager: Shutting down and abandoning module SlateReflector (154)
+[2021.12.09-01.46.35:255][ 27]LogModuleManager: Shutting down and abandoning module Slate (152)
+[2021.12.09-01.46.35:255][ 27]LogModuleManager: Shutting down and abandoning module EditorStyle (150)
+[2021.12.09-01.46.35:257][ 27]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (148)
+[2021.12.09-01.46.35:257][ 27]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (146)
+[2021.12.09-01.46.35:257][ 27]LogModuleManager: Shutting down and abandoning module XAudio2 (144)
+[2021.12.09-01.46.35:257][ 27]LogModuleManager: Shutting down and abandoning module Networking (142)
+[2021.12.09-01.46.35:257][ 27]LogModuleManager: Shutting down and abandoning module Core (138)
+[2021.12.09-01.46.35:257][ 27]LogModuleManager: Shutting down and abandoning module AssetRegistry (136)
+[2021.12.09-01.46.35:333][ 27]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2021.12.09-01.46.35:333][ 27]LogDirectoryWatcher: A directory notification for '../../../../../BlackBoxAudioRoom 4.15/Content/' was aborted.
+[2021.12.09-01.46.35:333][ 27]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2021.12.09-01.46.35:333][ 27]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (135)
+[2021.12.09-01.46.35:333][ 27]LogModuleManager: Shutting down and abandoning module KismetCompiler (132)
+[2021.12.09-01.46.35:333][ 27]LogModuleManager: Shutting down and abandoning module PhysXFormats (130)
+[2021.12.09-01.46.35:333][ 27]LogModuleManager: Shutting down and abandoning module MeshUtilities (128)
+[2021.12.09-01.46.35:334][ 27]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (127)
+[2021.12.09-01.46.35:334][ 27]LogModuleManager: Shutting down and abandoning module PropertyEditor (125)
+[2021.12.09-01.46.35:334][ 27]LogModuleManager: Shutting down and abandoning module DerivedDataCache (122)
+[2021.12.09-01.46.35:411][ 27]LogDerivedDataCache: Shutdown
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module TargetPlatform (120)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (119)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (117)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (115)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (113)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (111)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (109)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module ImageWrapper (108)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (105)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (103)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (101)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (99)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (97)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (95)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (93)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Messaging (91)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (89)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (87)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (77)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (75)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (73)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (71)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (69)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (67)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (65)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (63)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (61)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (59)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (57)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (55)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (53)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module InputCore (50)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module Settings (48)
+[2021.12.09-01.46.35:411][ 27]LogModuleManager: Shutting down and abandoning module OculusRift (46)
+[2021.12.09-01.46.35:412][ 27]LogModuleManager: Shutting down and abandoning module GearVR (44)
+[2021.12.09-01.46.35:412][ 27]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (42)
+[2021.12.09-01.46.35:412][ 27]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (40)
+[2021.12.09-01.46.35:412][ 27]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (36)
+[2021.12.09-01.46.35:412][ 27]LogOnline:Display: Unloading online subsystem: NULL
+[2021.12.09-01.46.35:412][ 27]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2021.12.09-01.46.35:412][ 27]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2021.12.09-01.46.35:412][ 27]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B5ACC2D2F-46FC-85D5-5A63-C2A2A72408E8%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.15.1-0%2B%2B%2BUE4%2BRelease-4.15&UserID=b5f17bbd405697261a06edad71bc6c5e%7Cf4ebde72fd134f808a2c6866fa8daec7%7C13eb4d9e-83c8-40c0-ad2b-99ac3c2f0f4a&AppEnvironment=datacollector-source&UploadType=eteventstream] status=Processing
+[2021.12.09-01.46.35:427][ 27]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2021.12.09-01.46.35:428][ 27]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2021.12.09-01.46.35:429][ 27]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2021.12.09-01.46.35:429][ 27]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2021.12.09-01.46.35:429][ 27]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2021.12.09-01.46.35:429][ 27]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2021.12.09-01.46.35:430][ 27]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2021.12.09-01.46.35:433][ 27]LogExit: Exiting.
+[2021.12.09-01.46.35:434][ 27]Log file closed, 12/08/21 20:46:35
